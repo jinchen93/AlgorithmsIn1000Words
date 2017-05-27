@@ -1,0 +1,12 @@
+---
+  env:
+    browser: true
+    node: true
+    jquery: true
+  globals:
+    _: false
+    MyGlobalNamespace: true
+  rules:
+    eqeqeq: 2
+    no-undef: 1
+    no-unused-vars: 0
