@@ -1,0 +1,67 @@
+@import './fonts';
+@import './colors';
+
+#navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  background-color: $warm-red;
+  color: white;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 250px;
+  z-index: 13;
+  box-shadow: inset -2px 0 6px 0 rgba(0,0,0,.4);
+  div {
+    width: 100%;
+  }
+  #navbar-brand {
+    text-align: center;
+    font-weight: 700;
+    padding-top: 20px;
+    font-size: 1.8em;
+    font-family: $Pacifico;
+    span {
+      font-size: .8em;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+      color: green;
+    }
+  }
+
+  .nav-item {
+    margin-bottom: 50px;
+    margin-left: 16px;
+    i {
+      float: right;
+      position: relative;
+      text-align: right;
+      right: 11px;
+      top: 5px;
+    }
+  }
+
+  .navbar-nav {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .navbar-end {
+    position: absolute;
+    bottom: 50px;
+    left: -20px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .nav-item {
+      margin: 0px;
+    }
+  }
+}
