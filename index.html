@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Algorithms in 1000 Words</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/alertify.js/0.3.11/alertify.core.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/alertify.js/0.3.11/alertify.default.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alertify.js/0.3.11/alertify.min.js"></script>
     <script type="text/javascript" src="node_modules/d3/build/d3.min.js"></script>
   </head>
   <body>
@@ -53,6 +56,19 @@
 
       <!-- D3 SVG CANVAS -->
       <svg id="svg" width="1824" height="500"></svg>
+
+      <!-- Every Controller Scheme -->
+      <aside id="bst">
+        <input name="node"/>
+        <button name="add"></button>
+        <button name="remove"></button>
+      </aside>
+
+
+      <footer>
+        <input type="range" id="timeline">
+        </input>
+      </footer>
     </div>
     <script src="algorithms_in_1000_words.js"></script>
   </body>

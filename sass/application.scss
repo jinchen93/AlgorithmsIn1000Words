@@ -1,9 +1,18 @@
 @import './fonts';
+@import './colors';
 
 svg {
-  background-color: aliceblue;
+  background: aliceblue;
   border: 1px black dashed;
   margin-left: 250px;
+}
+.alertify-logs {
+  top: 10px;
+  font-size: 2em;
+  .alertify-log {
+    width: 350px;
+    background-color: $warm-red;
+  }
 }
 .node {
   fill: #fff;
