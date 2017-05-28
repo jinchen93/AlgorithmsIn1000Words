@@ -20,4 +20,10 @@ svg {
       stroke: green;
     }
   }
+  &.exit {
+    stroke: red;
+    text: {
+      stroke: red;
+    }
+  }
 }
