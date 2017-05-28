@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
 svg {
   background-color: aliceblue;
   border: 1px black dashed;
@@ -7,12 +9,15 @@ svg {
   fill: #fff;
   stroke: steelblue;
   stroke-width: 3px;
-}
-
-.node text { font: 12px sans-serif; }
-
-.link {
-  fill: none;
-  stroke: #ccc;
-  stroke-width: 2px;
+  text {
+    font-size: 20px;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+  }
+  &.enter {
+    stroke: green;
+    text: {
+      stroke: green;
+    }
+  }
 }
