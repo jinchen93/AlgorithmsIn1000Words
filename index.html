@@ -5,6 +5,7 @@
     <title>Algorithms in 1000 Words</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/alertify.js/0.3.11/alertify.core.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/alertify.js/0.3.11/alertify.default.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/alertify.js/0.3.11/alertify.min.js"></script>
     <script type="text/javascript" src="node_modules/d3/build/d3.min.js"></script>
   </head>
@@ -20,31 +21,36 @@
           <div class="option">
             Sorts
             <ul>
-              <li>Bubble Sort</li>
-              <li>Quick Sort</li>
-              <li>Merge Sort</li>
-              <li>Random Sort</li>
+              <li><a class="algorithm" href="#bubble">Bubble Sort</a></li>
+              <li><a class="algorithm" href="#quick">Quick Sort</a></li>
+              <li><a class="algorithm" href="#merge">Merge Sort</a></li>
+              <li><a class="algorithm" href="#random">Random Sort</a></li>
             </ul>
           </div>
           <div class="option">
             Trees
             <ul>
-              <li>Binary Search Tree</li>
-              <li>Red-Black Tree</li>
-              <li>AVL Tree</li>
-              <li>Splay Tree</li>
+              <li><a class="algorithm" href="#binary">Binary Search Tree</a></li>
+              <li><a class="algorithm" href="#red-black">Red-Black Tree</a></li>
+              <li><a class="algorithm" href="#avl">AVL Tree</a></li>
+              <li><a class="algorithm" href="#splay">Splay Tree</a></li>
             </ul>
           </div>
           <div class="option">
             Graphs
             <ul>
-              <li>Bredth-First-Search</li>
-              <li>Depth-First-Search</li>
-              <li>Dijsktra's</li>
-              <li>Bellman-Ford</li>
-              <li>Floyd-Warshall</li>
+              <li><a class="algorithm" href="#bfs">Bredth-First-Search</a></li>
+              <li><a class="algorithm" href="#dfs">Depth-First-Search</a></li>
+              <li><a class="algorithm" href="#dij">Dijsktra's</a></li>
+              <li><a class="algorithm" href="#bell-ford">Bellman-Ford</a></li>
+              <li><a class="algorithm" href="#floyd-war">Floyd-Warshall</a></li>
             </ul>
           </div>
+
+
+          <!-- Every Controller Scheme -->
+          <aside id="controls">
+          </aside>
         </div>
         <div id="controls">
         </div>
@@ -56,14 +62,6 @@
 
       <!-- D3 SVG CANVAS -->
       <svg id="svg" width="1824" height="500"></svg>
-
-      <!-- Every Controller Scheme -->
-      <aside id="bst">
-        <input name="node"/>
-        <button name="add"></button>
-        <button name="remove"></button>
-      </aside>
-
 
       <footer>
         <input type="range" id="timeline"></input>
