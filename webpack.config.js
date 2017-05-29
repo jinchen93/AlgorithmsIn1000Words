@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
     entry: './lib/main.js',
 	  devtool: 'source-map',
