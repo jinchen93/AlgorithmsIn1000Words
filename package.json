@@ -15,13 +15,13 @@
     "node-sass": "^4.5.3",
     "sass-loader": "^6.0.5",
     "style-loader": "^0.18.1",
-    "webpack": "^2.6.1",
+    "webpack": "^3.12.0",
     "webpack-dev-server": "^2.4.5"
   },
   "dependencies": {
     "d3": "^4.9.1",
     "input-range-scss": "^1.4.1",
     "lodash": "^4.17.4",
-    "webpack": "^2.6.1"
+    "webpack": "^3.12.0"
   }
 }
